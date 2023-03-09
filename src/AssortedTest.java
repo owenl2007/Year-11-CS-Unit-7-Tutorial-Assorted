@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AssortedTest {
 
+
+
     List findSumList;
     List findSumList2;
 
@@ -67,9 +69,11 @@ class AssortedTest {
         }
     }
 
+
     @org.junit.jupiter.api.Test
     void busStop() {
         List<Integer[]> list = new ArrayList<>();
+
         list.add(new Integer[] {10,0});
         list.add(new Integer[] {3,5});
         list.add(new Integer[] {2,5});
@@ -116,11 +120,13 @@ class AssortedTest {
 
         List<Integer> result2 = Assorted.subtractList(listThree, listFour);
 
+
         assertTrue(result2.size() == 2);
         assertTrue(result2.get(0) == 1);
         assertTrue(result2.get(1) == 3);
 
     }
+
 
     @org.junit.jupiter.api.Test
     void sortOdd() {
@@ -139,6 +145,8 @@ class AssortedTest {
                 assertTrue(list.get(i) == listSortedOdd.get(i));
             }
         }
+
+
 
 
     }
